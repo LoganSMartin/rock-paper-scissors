@@ -13,3 +13,19 @@ function computerPlay() {
 
     return computerMove;
 }
+// simulates a round of the game using the user's selection the generated selection of the computer
+function playRound(playerMove, computerPlay) {
+    let computerMove = computerPlay();
+    if (playerMove === "rock" && computerMove === "scissors") {
+        console.log(`You Win! ${playerMove} beats ${computerMove}`);
+    }
+    else if (playerMove === "paper" && computerMove === "rock") {
+        console.log(`You Win! ${playerMove} beats ${computerMove}`);
+    }
+    else if (playerMove === "scissors" && computerMove === "paper") {
+        console.log(`You Win! ${playerMove} beats ${computerMove}`);
+    }
+    else if (playerMove === computerMove) {
+        console.log("Draw!");
+    } else {console.log(`You Lose! ${computerMove} beats ${playerMove}`)}
+}
