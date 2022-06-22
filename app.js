@@ -13,7 +13,8 @@ function computerPlay() {
 
     return computerMove;
 }
-// simulates a round of the game using the user's selection the generated selection of the computer
+// simulates a round of the game using the user's selection the generated
+// selection of the computer
 function playRound(playerMove, computerPlay) {
     let computerMove = computerPlay();
     if (playerMove === "rock" && computerMove === "scissors") {
